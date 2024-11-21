@@ -1,4 +1,4 @@
-Feature: Items
+Feature: Users
 
   @User
   Scenario: I want to create a new user and update this information
@@ -8,7 +8,7 @@ Feature: Items
     When I send POST request 'api/user.json' with json and BASIC authentication
     """
     {
-       "Email":"boris@testing890.com",
+       "Email":"borOmarPerez@testing890.com",
        "FullName": "Boris Perez",
        "Password": "Password"
     }
@@ -21,7 +21,7 @@ Feature: Items
     """
     {
         "Id": EXCLUDE,
-        "Email": "boris@testing890.com",
+        "Email": "borOmarPerez@testing890.com",
         "Password": null,
         "FullName": "Boris Perez",
         "TimeZone": 0,
